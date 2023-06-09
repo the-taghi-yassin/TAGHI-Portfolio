@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>Yassin Taghi Portfolio</title>
+</head>
+<body>
+    <header>
+        <div class="user">
+            <img src="img/main.png" alt="profile Pic">
+            <h3 class="name">Yassin Taghi</h3>
+            <p class="post">Frontend Developer</p>
+        </div>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#about">About me</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="/CV/cv.pdf" download>Download CV</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div id="menu" class=" fas fa-bars"></div>
+    <section class="about" id="about">
+        <h3>HI THERE !</h3>
+        <h1>I'M <span>yassin taghi</span></h1>
+        <p>Welcome to my frontend development portfolio!
+             I'm passionate about crafting seamless user experiences through clean and efficient code.
+             With expertise in HTML, CSS, and JavaScript, I specialize in creating visually stunning and responsive websites.
+              Through a combination of technical skills and a keen eye for design,
+             I strive to bring ideas to life and deliver exceptional digital experiences</p>
+        <div class="share">
+            <a href="https://www.linkedin.com/in/the-yassin-taghi/" class="fab fa-linkedin"></a>
+            <a href="https://github.com/the-taghi-yassin" class="fab fa-github"></a>
+            <a href="https://codepen.io/the-taghi-yassin" class="fa-brands fa-codepen"></a>
+        </div>
+    </section>
+    <section class="skills" id="skills">
+        <h1 class="heading"><span>My</span> Skills</h1>
+        <div class="box-container">
+            <div class="box">
+                <img src="img/html5-100.png" alt="html logo">
+                <h3 style="font-size: 25px; color:white;">HTML</h3>               
+            </div>
+            <div class="box">
+                <img src="img/css-96.png" alt="css logo">
+                <h3 style="font-size: 25px; color:white;">CSS</h3>               
+            </div>
+            <div class="box">
+                <img src="img/javascript-100.png" alt="javascript logo">
+                <h3 style="font-size: 25px; color:white;">Javascript</h3>                
+            </div>
+            <div class="box">
+                <img src="img/react-96.png" calt="react logo">
+                <h3 style="font-size: 25px; color:white;">React</h3>               
+            </div>
+            <div class="box">
+                <img src="img/tailwind-css-96.png" calt="tailwind logo">
+                <h3 style="font-size: 25px; color:white;">Tailwind CSS</h3>                             
+            </div>
+            <div class="box">
+                <img src="img/bootstrap-96.png" calt="bootstrap logo">
+                <h3 style="font-size: 25px; color:white;">Bootstrap 5</h3>
+            </div>
+            <div class="box">
+                <img src="img/python-100.png" calt="python logo">
+                <h3 style="font-size: 25px; color:white;">Python</h3>                
+            </div>
+            <div class="box">
+                <img src="img/django-100.png" calt="django logo">
+                <h3 style="font-size: 25px; color:white;">Django</h3>              
+            </div>
+        </div>
+    </section>
+    <section class="projects" id="projects">
+        <h1 class="heading"><span>My</span> Projects</h1>
+        <div class="box-container">
+            <div class="box">
+                <img src="img/react-project.jfif" alt="">
+            </div>
+            <div class="box">
+                <img src="img/react-project.jfif" alt="">
+            </div>
+            <div class="box">
+                <img src="img/react-project.jfif" alt="">
+            </div>
+            <div class="box">
+                <img src="img/react-project.jfif" alt="">
+            </div>            <div class="box">
+                <img src="img/react-project.jfif" alt="">
+            </div>
+        </div>
+
+    </section>
+    <section class="contact" id="contact">
+        <h1 class="heading"><span>My</span> Contact</h1>
+        <div class="row">
+            <div class="content">
+                <h3 class="title">Contact info</h3>
+                <div class="info">
+                    <h3><i class="fas fa-envelope"></i>devtaghi@gmail.com</h3>
+                    <h3><i class="fas fa-phone"></i>+212624107287</h3>
+                    <h3><i class="fas fa-map-marked-alt"></i>Morocco, Tetouan</h3>
+                </div>
+            </div>
+            <form onsubmit="sendMail()" >
+                <input type="text" id="name" placeholder="name" class="box">
+                <input type="email" id="email" placeholder="email" class="box">
+                <textarea name="" id="message" cols="30" rows="10" class="box" placeholder="message"></textarea>
+                <button type="submit" class="btn">Send <i class="fas fa-paper-plane"></i></button>
+            </form>
+        </div>
+    </section>
+
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function(){
+            emailjs.init("NK1IMEdAXO2UPZPo6");
+        })();
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>   
+    <script src="js/main.js"></script>
+</body>
+</html>
